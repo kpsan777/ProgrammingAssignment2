@@ -7,15 +7,13 @@
 ## [1,]  0.5  0.0
 ## [2,]  0.0  0.5
 
-makeCacheMatrix <- function(x = matrix()) {
- 
-  ## Create a matrix  which is a list containing fcntions for
-  ##set the value of the matrix
-  ##get the value of the matrix
-  ## set the value of the inverse matrix
-  ## get the value of the inverse matrix
-  
   makeCacheMatrix <- function(x = matrix()) {
+    
+    ## Create a matrix  which is a list containing fcntions for
+    ##set the value of the matrix
+    ##get the value of the matrix
+    ## set the value of the inverse matrix
+    ## get the value of the inverse matrix
     i <- NULL
     set <- function(y) {
       x <<- y
@@ -49,4 +47,3 @@ cacheSolve <- function(x, ...) {
   i
 }
 
-}
